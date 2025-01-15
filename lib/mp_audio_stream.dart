@@ -32,6 +32,10 @@ abstract class AudioStream {
   void resetStat();
 }
 
+int getBufferSize();
+
+int getBufferFilledSize();
+
 /// Returns an `AudioStream` instance for running platform (web/others)
 AudioStream getAudioStream() => AudioStreamImpl();
 
